@@ -176,7 +176,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("13_xjwby")
 }],
-"loop": true,
+"loop": false,
 "name": &"recibe_danio",
 "speed": 5.0
 }, {
@@ -211,7 +211,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("20_lolu4")
 }],
-"loop": true,
+"loop": false,
 "name": &"recibe_danio_2",
 "speed": 5.0
 }]
@@ -219,7 +219,25 @@ animations = [{
 [node name="escena_principal" type="Node2D"]
 script = ExtResource("1_plhmg")
 
+[node name="golpear" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 472.0
+offset_top = 289.0
+offset_right = 690.0
+offset_bottom = 383.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "golpear
+"
+
 [node name="Personaje" type="Node2D" parent="."]
+visible = false
 
 [node name="Sprite2D" type="Sprite2D" parent="Personaje"]
 position = Vector2(567, 150)
@@ -240,22 +258,8 @@ libraries = {
 position = Vector2(582.99994, 515)
 scale = Vector2(3.4, 3.3999999)
 sprite_frames = SubResource("SpriteFrames_r0811")
-animation = &"recibe_danio_2"
+animation = &"idle"
 script = ExtResource("14_f134c")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="golpear" type="Button" parent="CanvasLayer"]
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -106.0
-offset_top = 279.0
-offset_right = 112.0
-offset_bottom = 373.0
-grow_horizontal = 2
-text = "golpear
-"
-
+[connection signal="pressed" from="golpear" to="Personaje_2/AnimatedSprite2D" method="_on_golpear_pressed"]
 [connection signal="animation_finished" from="Personaje_2/AnimatedSprite2D" to="Personaje_2/AnimatedSprite2D" method="_on_animation_finished"]
-[connection signal="pressed" from="CanvasLayer/golpear" to="Personaje_2/AnimatedSprite2D" method="_on_golpear_pressed"]

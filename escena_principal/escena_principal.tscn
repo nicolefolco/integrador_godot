@@ -1,7 +1,6 @@
-[gd_scene load_steps=26 format=3 uid="uid://bn7i51bx58njc"]
+[gd_scene load_steps=45 format=3 uid="uid://bn7i51bx58njc"]
 
 [ext_resource type="Script" uid="uid://blnosgiuqure1" path="res://escena_principal/escena_principal.gd" id="1_plhmg"]
-[ext_resource type="Texture2D" uid="uid://dcgb4k6yxp2od" path="res://animaciones/orco ataque.png" id="2_wi1rp"]
 [ext_resource type="Texture2D" uid="uid://clm4w8yihlyv1" path="res://animaciones/idle/tile11.png" id="3_qm3w1"]
 [ext_resource type="Texture2D" uid="uid://secwoop2gdjo" path="res://animaciones/recibe_danio/tile30.png" id="3_qomnf"]
 [ext_resource type="Texture2D" uid="uid://o3f2vpqo7u7v" path="res://animaciones/recibe_danio/tile31.png" id="4_f134c"]
@@ -21,109 +20,29 @@
 [ext_resource type="Texture2D" uid="uid://dqeovarv8ha0v" path="res://animaciones/recibe_danio_2/tile53.png" id="18_u3uol"]
 [ext_resource type="Texture2D" uid="uid://h5mht2iptyu8" path="res://animaciones/recibe_danio_2/tile54.png" id="19_xjwby"]
 [ext_resource type="Texture2D" uid="uid://bymv4ebgyjaam" path="res://animaciones/recibe_danio_2/tile55.png" id="20_lolu4"]
-
-[sub_resource type="Animation" id="Animation_epypp"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("2_wi1rp")]
-}
-tracks/1/type = "bezier"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".:hframes")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(4, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-tracks/2/type = "bezier"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath(".:vframes")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(3, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-tracks/3/type = "bezier"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath(".:frame")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-
-[sub_resource type="Animation" id="Animation_0e48y"]
-resource_name = "new_animation"
-length = 1.0005
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0.02755791),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("2_wi1rp")]
-}
-tracks/1/type = "bezier"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".:hframes")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(4, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0.02755791)
-}
-tracks/2/type = "bezier"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath(".:vframes")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(3, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0.02755791)
-}
-tracks/3/type = "bezier"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath(".:frame")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 1, -0.0065181255, -0.16666667, 0, 0, 2, -0.0055555603, -0.16666667, 0, 0, 3, -0.0055555506, -0.16666667, 0, 0, 4, -0.0055555603, -0.16666667, 0, 0, 5, -0.0055555506, -0.16666667, 0, 0, 6, -0.0055555603, -0.16666667, 0, 0, 7, -0.0055555603, -0.16666667, 0, 0, 8, -0.0055555506, -0.16666667, 0, 0, 9, -0.0055555603, -0.16666667, 0, 0, 10, -0.0055555506, -0.16666667, 0, 0, 11, -0.0055555603, -0.16666667, 0, 0),
-"times": PackedFloat32Array(0.02755791, 0.06666666, 0.100000024, 0.13333333, 0.16666669, 0.19999999, 0.23333335, 0.2666667, 0.3, 0.33333337, 0.36666667, 0.40000004)
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_0hol4"]
-_data = {
-&"RESET": SubResource("Animation_epypp"),
-&"new_animation": SubResource("Animation_0e48y")
-}
+[ext_resource type="Texture2D" uid="uid://dt8tuy5sqnv4n" path="res://animaciones/se_enoja_mucho/tile39.png" id="21_3f87d"]
+[ext_resource type="Texture2D" uid="uid://cmvsi0y7s8hwj" path="res://animaciones/se_enoja_mucho/tile40.png" id="22_4uubu"]
+[ext_resource type="Texture2D" uid="uid://c6jtm0wh037l0" path="res://animaciones/se_enoja_mucho/tile41.png" id="23_pdhob"]
+[ext_resource type="Texture2D" uid="uid://b5dwr1orhn2un" path="res://animaciones/se_enoja_mucho/tile42.png" id="24_nl07a"]
+[ext_resource type="Texture2D" uid="uid://cxqpmpfyremp0" path="res://animaciones/se_enoja_mucho/tile43.png" id="25_a68al"]
+[ext_resource type="Texture2D" uid="uid://cga3gblhtbkph" path="res://animaciones/se_enoja_mucho/tile44.png" id="26_4iymh"]
+[ext_resource type="Texture2D" uid="uid://gvgbpahfrxod" path="res://animaciones/se_enoja_mucho/tile45.png" id="27_24klc"]
+[ext_resource type="Texture2D" uid="uid://cep1rj8ym1x5o" path="res://animaciones/se_enoja_mucho/tile46.png" id="28_12e4r"]
+[ext_resource type="Texture2D" uid="uid://3r1xyq0owd1u" path="res://animaciones/se_enoja_mucho/tile47.png" id="29_4wcdv"]
+[ext_resource type="Texture2D" uid="uid://bivtbg1edjbts" path="res://animaciones/se_enoja_mucho/tile48.png" id="30_pndjr"]
+[ext_resource type="Texture2D" uid="uid://bd3m5gbi6xrb1" path="res://animaciones/se_enoja_mucho/tile49.png" id="31_0qmq1"]
+[ext_resource type="Texture2D" uid="uid://d3ug3fxuydw0t" path="res://animaciones/se_enoja_mucho/tile50.png" id="32_qnvlk"]
+[ext_resource type="Texture2D" uid="uid://dp3e858dultsh" path="res://animaciones/se_enoja_mucho/tile51.png" id="33_nxpf1"]
+[ext_resource type="Texture2D" uid="uid://c5qe7gj3g8jnk" path="res://animaciones/se_enoja_mucho/tile52.png" id="34_vewxg"]
+[ext_resource type="Texture2D" uid="uid://dog3cv6maianu" path="res://animaciones/se_enoja_mucho/tile53.png" id="35_dqhyj"]
+[ext_resource type="Texture2D" uid="uid://bt7usflgo0y5d" path="res://animaciones/se_enoja_mucho/tile54.png" id="36_kf02x"]
+[ext_resource type="Texture2D" uid="uid://boophyhae32um" path="res://animaciones/se_enoja_mucho/tile55.png" id="37_52dag"]
+[ext_resource type="Texture2D" uid="uid://bo0hoi51tk3hg" path="res://animaciones/se_enoja_mucho/tile56.png" id="38_lp3wv"]
+[ext_resource type="Texture2D" uid="uid://ce5krwbscemh6" path="res://animaciones/se_enoja_mucho/tile57.png" id="39_ba222"]
+[ext_resource type="Texture2D" uid="uid://b14vrdt2vp3d1" path="res://animaciones/se_enoja_mucho/tile58.png" id="40_t2aje"]
+[ext_resource type="Texture2D" uid="uid://mrsq3fe1o3ql" path="res://animaciones/se_enoja_mucho/tile59.png" id="41_lombx"]
+[ext_resource type="Texture2D" uid="uid://b7prjyoea4cni" path="res://fondo/paisaje.jpg" id="42_3f87d"]
+[ext_resource type="PackedScene" uid="uid://dptmjxtyq44v8" path="res://libelulas/libelulas.tscn" id="43_4uubu"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_r0811"]
 resource_local_to_scene = true
@@ -214,6 +133,74 @@ animations = [{
 "loop": false,
 "name": &"recibe_danio_2",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("21_3f87d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_4uubu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_pdhob")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_nl07a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_a68al")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_4iymh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_24klc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_12e4r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_4wcdv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_pndjr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_0qmq1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_qnvlk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_nxpf1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_vewxg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_dqhyj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_kf02x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_52dag")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_lp3wv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_ba222")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_t2aje")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_lombx")
+}],
+"loop": true,
+"name": &"se_enoja_mucho",
+"speed": 5.0
 }]
 
 [node name="escena_principal" type="Node2D"]
@@ -226,40 +213,44 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = 472.0
-offset_top = 289.0
+offset_top = 132.0
 offset_right = 690.0
-offset_bottom = 383.0
+offset_bottom = 226.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-text = "golpear
+text = "GOLPEAR
 "
 
 [node name="Personaje" type="Node2D" parent="."]
-visible = false
 
-[node name="Sprite2D" type="Sprite2D" parent="Personaje"]
-position = Vector2(567, 150)
-scale = Vector2(5.9, 5.9)
-texture = ExtResource("2_wi1rp")
-hframes = 4
-vframes = 3
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Personaje"]
-root_node = NodePath("../Sprite2D")
-libraries = {
-&"": SubResource("AnimationLibrary_0hol4")
-}
-
-[node name="Personaje_2" type="Node2D" parent="."]
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Personaje_2"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Personaje"]
 position = Vector2(582.99994, 515)
 scale = Vector2(3.4, 3.3999999)
 sprite_frames = SubResource("SpriteFrames_r0811")
-animation = &"idle"
+animation = &"se_enoja_mucho"
 script = ExtResource("14_f134c")
 
-[connection signal="pressed" from="golpear" to="Personaje_2/AnimatedSprite2D" method="_on_golpear_pressed"]
-[connection signal="animation_finished" from="Personaje_2/AnimatedSprite2D" to="Personaje_2/AnimatedSprite2D" method="_on_animation_finished"]
+[node name="reiniciar" type="Button" parent="."]
+offset_left = 474.0
+offset_top = 243.0
+offset_right = 690.0
+offset_bottom = 336.0
+text = "REINICIAR"
+
+[node name="fondo" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(575, 315)
+scale = Vector2(0.41724998, 0.41725)
+texture = ExtResource("42_3f87d")
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="Libelulas" parent="." instance=ExtResource("43_4uubu")]
+
+[connection signal="pressed" from="golpear" to="Personaje/AnimatedSprite2D" method="_on_golpear_pressed"]
+[connection signal="animation_finished" from="Personaje/AnimatedSprite2D" to="Personaje/AnimatedSprite2D" method="_on_animation_finished"]
+[connection signal="pressed" from="reiniciar" to="Personaje/AnimatedSprite2D" method="_on_reiniciar_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

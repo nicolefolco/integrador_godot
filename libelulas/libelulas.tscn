@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://dptmjxtyq44v8"]
+
+[ext_resource type="Script" uid="uid://debloef2fsqmy" path="res://libelulas/libelulas.gd" id="1_j2vv8"]
+[ext_resource type="Texture2D" uid="uid://cifp0t2vlprln" path="res://libelulas/libelula.png" id="1_ttybt"]
+
+[node name="Libelulas" type="Node2D"]
+script = ExtResource("1_j2vv8")
+
+[node name="piel" type="Sprite2D" parent="."]
+position = Vector2(1226, 60.999996)
+scale = Vector2(0.22285715, 0.22285715)
+texture = ExtResource("1_ttybt")

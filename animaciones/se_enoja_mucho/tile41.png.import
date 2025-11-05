@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://8x3iy301rbb6"
-path="res://.godot/imported/tile16.png-97a8d9c1265196f25951c34fbea401f2.ctex"
+uid="uid://c6jtm0wh037l0"
+path="res://.godot/imported/tile41.png-f48bfacacf0175cc35452403280abf72.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tile16.png"
-dest_files=["res://.godot/imported/tile16.png-97a8d9c1265196f25951c34fbea401f2.ctex"]
+source_file="res://animaciones/se_enoja_mucho/tile41.png"
+dest_files=["res://.godot/imported/tile41.png-f48bfacacf0175cc35452403280abf72.ctex"]
 
 [params]
 

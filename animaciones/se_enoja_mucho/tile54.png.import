@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcgb4k6yxp2od"
-path="res://.godot/imported/orco ataque.png-e68e9a7cb083daa10fb19d3dd3a71342.ctex"
+uid="uid://bt7usflgo0y5d"
+path="res://.godot/imported/tile54.png-78c5e14d9b9847f9b5a6bd5fd4754df7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://animaciones/orco ataque.png"
-dest_files=["res://.godot/imported/orco ataque.png-e68e9a7cb083daa10fb19d3dd3a71342.ctex"]
+source_file="res://animaciones/se_enoja_mucho/tile54.png"
+dest_files=["res://.godot/imported/tile54.png-78c5e14d9b9847f9b5a6bd5fd4754df7.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cifp0t2vlprln"
-path="res://.godot/imported/libelula.png-54a4f148bf2b6a2d9b231480ff391653.ctex"
+uid="uid://dg2qsf7sj2kst"
+path="res://.godot/imported/lib1.png-9b7ec5785859483e4e26413039a1c198.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://libelulas/libelula.png"
-dest_files=["res://.godot/imported/libelula.png-54a4f148bf2b6a2d9b231480ff391653.ctex"]
+source_file="res://libelulas/lib1.png"
+dest_files=["res://.godot/imported/lib1.png-9b7ec5785859483e4e26413039a1c198.ctex"]
 
 [params]
 

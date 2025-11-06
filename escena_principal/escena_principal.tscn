@@ -1,6 +1,7 @@
-[gd_scene load_steps=45 format=3 uid="uid://bn7i51bx58njc"]
+[gd_scene load_steps=53 format=3 uid="uid://bn7i51bx58njc"]
 
 [ext_resource type="Script" uid="uid://blnosgiuqure1" path="res://escena_principal/escena_principal.gd" id="1_plhmg"]
+[ext_resource type="FontFile" uid="uid://d2pseia0s77lv" path="res://Renogare-Regular.otf" id="2_nl07a"]
 [ext_resource type="Texture2D" uid="uid://clm4w8yihlyv1" path="res://animaciones/idle/tile11.png" id="3_qm3w1"]
 [ext_resource type="Texture2D" uid="uid://secwoop2gdjo" path="res://animaciones/recibe_danio/tile30.png" id="3_qomnf"]
 [ext_resource type="Texture2D" uid="uid://o3f2vpqo7u7v" path="res://animaciones/recibe_danio/tile31.png" id="4_f134c"]
@@ -43,6 +44,70 @@
 [ext_resource type="Texture2D" uid="uid://mrsq3fe1o3ql" path="res://animaciones/se_enoja_mucho/tile59.png" id="41_lombx"]
 [ext_resource type="Texture2D" uid="uid://b7prjyoea4cni" path="res://fondo/paisaje.jpg" id="42_3f87d"]
 [ext_resource type="PackedScene" uid="uid://dptmjxtyq44v8" path="res://libelulas/libelulas.tscn" id="43_4uubu"]
+[ext_resource type="Script" uid="uid://butj77vpa6kce" path="res://libelulas/animated_sprite_2d.gd" id="47_4wcdv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a68al"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.17607704, 0.65434957, 0.8325702, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.1764706, 0.47843137, 0.83137256, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_color = Color(0, 0, 0, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nl07a"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.1764706, 0.41960785, 0.7254902, 1)
+border_color = Color(0.8, 0.8, 0.8, 0)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_color = Color(0, 0, 0, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_24klc"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.1764706, 0.5529412, 0.7764706, 1)
+border_color = Color(0.8, 0.8, 0.8, 0)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_color = Color(0, 0, 0, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4iymh"]
+bg_color = Color(0.1764706, 0.654902, 0.83137256, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.1764706, 0.47843137, 0.83137256, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_12e4r"]
+bg_color = Color(0.1764706, 0.5529412, 0.7764706, 1)
+border_color = Color(0.8, 0.8, 0.8, 0)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_r0811"]
 resource_local_to_scene = true
@@ -59,7 +124,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle",
-"speed": 5.0
+"speed": 2.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -97,7 +162,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"recibe_danio",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -132,7 +197,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"recibe_danio_2",
-"speed": 5.0
+"speed": 9.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -197,16 +262,88 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("41_lombx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_3f87d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_4uubu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_pdhob")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_nl07a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_a68al")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_4iymh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_24klc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_12e4r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_4wcdv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_pndjr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_0qmq1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_qnvlk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_nxpf1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_vewxg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_dqhyj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_kf02x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_52dag")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_lp3wv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_ba222")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_t2aje")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_lombx")
 }],
-"loop": true,
+"loop": false,
 "name": &"se_enoja_mucho",
-"speed": 5.0
+"speed": 10.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pndjr"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"volando",
+"speed": 3.0
 }]
 
 [node name="escena_principal" type="Node2D"]
 script = ExtResource("1_plhmg")
 
 [node name="golpear" type="Button" parent="."]
+texture_filter = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -220,37 +357,58 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("2_nl07a")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_a68al")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_nl07a")
+theme_override_styles/hover = SubResource("StyleBoxFlat_24klc")
 text = "GOLPEAR
 "
+
+[node name="reiniciar" type="Button" parent="."]
+texture_filter = 1
+offset_left = 474.0
+offset_top = 243.0
+offset_right = 690.0
+offset_bottom = 336.0
+theme_override_fonts/font = ExtResource("2_nl07a")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_4iymh")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_nl07a")
+theme_override_styles/hover = SubResource("StyleBoxFlat_12e4r")
+text = "REINICIAR"
 
 [node name="Personaje" type="Node2D" parent="."]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Personaje"]
+texture_filter = 1
 position = Vector2(582.99994, 515)
 scale = Vector2(3.4, 3.3999999)
 sprite_frames = SubResource("SpriteFrames_r0811")
 animation = &"se_enoja_mucho"
 script = ExtResource("14_f134c")
 
-[node name="reiniciar" type="Button" parent="."]
-offset_left = 474.0
-offset_top = 243.0
-offset_right = 690.0
-offset_bottom = 336.0
-text = "REINICIAR"
-
 [node name="fondo" type="Sprite2D" parent="."]
 z_index = -1
-position = Vector2(575, 315)
+texture_filter = 1
+position = Vector2(509.99997, 154)
 scale = Vector2(0.41724998, 0.41725)
 texture = ExtResource("42_3f87d")
+offset = Vector2(155.78198, 385.8598)
 
 [node name="Timer" type="Timer" parent="."]
 autostart = true
 
 [node name="Libelulas" parent="." instance=ExtResource("43_4uubu")]
+position = Vector2(176, -43)
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="Libelulas"]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_pndjr")
+animation = &"volando"
+script = ExtResource("47_4wcdv")
 
 [connection signal="pressed" from="golpear" to="Personaje/AnimatedSprite2D" method="_on_golpear_pressed"]
-[connection signal="animation_finished" from="Personaje/AnimatedSprite2D" to="Personaje/AnimatedSprite2D" method="_on_animation_finished"]
 [connection signal="pressed" from="reiniciar" to="Personaje/AnimatedSprite2D" method="_on_reiniciar_pressed"]
+[connection signal="animation_finished" from="Personaje/AnimatedSprite2D" to="Personaje/AnimatedSprite2D" method="_on_animation_finished"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

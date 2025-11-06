@@ -1,12 +1,41 @@
-[gd_scene load_steps=3 format=3 uid="uid://dptmjxtyq44v8"]
+[gd_scene load_steps=8 format=3 uid="uid://dptmjxtyq44v8"]
 
 [ext_resource type="Script" uid="uid://debloef2fsqmy" path="res://libelulas/libelulas.gd" id="1_j2vv8"]
-[ext_resource type="Texture2D" uid="uid://cifp0t2vlprln" path="res://libelulas/libelula.png" id="1_ttybt"]
+[ext_resource type="Texture2D" uid="uid://dg2qsf7sj2kst" path="res://libelulas/lib1.png" id="2_y6qtq"]
+[ext_resource type="Texture2D" uid="uid://cv5kmppl62mbj" path="res://libelulas/lib2.png" id="3_dxxok"]
+[ext_resource type="Texture2D" uid="uid://dj5htth01ojdl" path="res://libelulas/lib3.png" id="4_gus2g"]
+[ext_resource type="Script" uid="uid://butj77vpa6kce" path="res://libelulas/animated_sprite_2d.gd" id="5_dxxok"]
+[ext_resource type="Texture2D" uid="uid://choy14aoxf5w0" path="res://libelulas/lib4.png" id="5_gus2g"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_klqpr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_y6qtq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_dxxok")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_gus2g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_gus2g")
+}],
+"loop": true,
+"name": &"volando",
+"speed": 4.0
+}]
 
 [node name="Libelulas" type="Node2D"]
+texture_filter = 1
+scale = Vector2(5.504074, 5.504074)
 script = ExtResource("1_j2vv8")
 
-[node name="piel" type="Sprite2D" parent="."]
-position = Vector2(1226, 60.999996)
-scale = Vector2(0.22285715, 0.22285715)
-texture = ExtResource("1_ttybt")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(216.93022, 6.54061)
+scale = Vector2(0.80378175, 0.80378175)
+sprite_frames = SubResource("SpriteFrames_klqpr")
+animation = &"volando"
+script = ExtResource("5_dxxok")

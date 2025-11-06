@@ -6,6 +6,7 @@ var contador_clicks_golpear = 0
 func _ready():
 	play("idle")
 
+	
 func animacion_idle():
 	play("idle")
 	estado_actual = "idle"
